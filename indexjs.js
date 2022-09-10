@@ -1,4 +1,3 @@
-
 const productos = [
     {id: 102, nombre: "cafe tostado", cant: "1000gr", stock: 15, precio:3000, mayor: "no"},
     {id: 203, nombre: "cafe colombiano", cant: "250gr", stock: 12, precio:1800, mayor: "no"},
