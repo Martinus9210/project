@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* FONTS */
+/* VARIABLES */
+/* EXTEND */
+.title {
+  font-family: "Cormorant SC", serif;
+  color: #353b48;
+}
+
+.dark-bg {
+  background-color: #191919;
+}
+
+.subtitle {
+  font-family: "Clash Grotesk", sans-serif;
+  color: #000;
+}
+
+/* APLICA A TODAS LAS PÁGINAS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bar-btn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  display: grid;
+  justify-content: center;
+}
+header .logo img {
+  display: flex;
+  margin: 20px auto;
+}
+header nav {
+  z-index: 1000;
+  margin: auto 0;
+  font-size: medium;
+}
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+header nav ul li:hover {
+  background: #e1b12c;
+}
+header a:hover {
+  color: #000;
+}
+header nav ul li a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  margin: 0 25px;
+  font-size: 18px;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+nav ul li .submenu {
+  display: none;
+  background: #f1f2f6;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+nav ul li .submenu li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo img {
+    display: flex;
+    width: 25vw;
+    margin: auto;
+  }
+  header .bar-btn {
+    display: block;
+    font-size: 25px;
+    color: #000;
+    margin-left: 20px;
+    cursor: pointer;
+    padding-bottom: 8px;
+  }
+  header .nav-menu {
+    height: 0vh;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 80%;
+    background-color: #ffda79;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 3% 3% 0;
+  }
+  header .nav-menu .submenu {
+    width: 100%;
+    position: relative;
+    background-color: #f1f2f6;
+  }
+  header nav ul li:hover .submenu {
+    display: inline-block;
+  }
+  header .nav-menu li {
+    display: none;
+  }
+  header #check {
+    display: none;
+  }
+  header #check:checked ~ .nav-menu {
+    height: 100vh;
+  }
+  header #check:checked ~ .nav-menu li {
+    display: block;
+  }
+  nav ul li:hover .submenu {
+    display: inline-block;
+  }
+  .menu {
+    text-transform: uppercase;
+    font-size: small;
+  }
+}
+footer {
+  background-color: #EAB543;
+}
+footer .logo {
+  border-radius: 55px 25px 85px 5px;
+}
+footer h2 {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+  footer div a .logo {
+    border-radius: 55px 25px 85px 5px;
+  }
+  footer .navbar-brand {
+    margin: auto;
+  }
+  footer .newsletter {
+    margin: 15px auto;
+    padding: 20px 15px;
+  }
+  footer .footerRedes {
+    margin: auto;
+    justify-content: space-around;
+  }
+}
+/* INDEX */
+.portada {
+  display: flex;
+}
+.portada .kongo {
+  width: 80%;
+  justify-content: flex-start;
+}
+
+/* NOSOTROS */
+.portada {
+  display: flex;
+}
+.portada .kongo {
+  width: 80%;
+  justify-content: flex-start;
+}/*# sourceMappingURL=main.css.map */
